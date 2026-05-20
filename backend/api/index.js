@@ -53,5 +53,10 @@ app.use(async (req, res, next) => {
 });
 
 app.use("/api", Routes);
+app.get("/", (req, res) => {
+  res.send("Backend Running Successfully");
+});
+
+
 
 module.exports = app;
